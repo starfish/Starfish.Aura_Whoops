@@ -1,0 +1,29 @@
+{
+    "name": "starfish/aura-whoops",
+    "description": "Whoops exception & error handler for Aura.Web.",
+    "authors": [
+        {
+            "name": "lee",
+            "email": "galactic.void@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Galactic\\Whoops\\_Config\\": "config/"
+        }
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "aura/web-kernel": "2.*@dev",
+        "filp/whoops": "1.*"
+    },
+    "extra": {
+        "aura": {
+            "type": "library",
+            "config": {
+                "dev": "Starfish\\Whoops\\_Config\\Dev"
+            }
+        }
+    }
+}
